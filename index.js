@@ -3,7 +3,7 @@ const app = express()
 
 
 app.get("/", (req, res)=>{
-    res.send("<h1>Welcome to azure</h1>")
+    res.send("<h1>Welcome to azure app services</h1>")
 })
 
 
