@@ -21,3 +21,18 @@ exports.newUser = async (req, res)=>{
         })
     }
 }
+
+exports.getUser = async (req, res)=>{
+    try {
+        const findUser = await User.find({})
+        res.status(200).json({
+            status:"success",
+            data: findUser
+        })
+    } catch (error) {
+        res.status(500).json({
+            status: "failed",
+            message: error.message
+        })
+    }
+}
