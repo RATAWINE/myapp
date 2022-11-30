@@ -54,3 +54,17 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_27F90EB57BA44D7396B978E36BF4B433 }}
           package: .
+
+
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  DATABASE_URL: ${{ secrets.DATABASE_URL}}
+  JWT_SECRET: ${{ secrets.JWT_SECRET}}
+  JWT_SECRET_RES: J${{ secrets.WT_SECRET_RES}}
+  TWILIO_ACCOUNT_SID: ${{secrets.TWILIO_ACCOUNT_SID}}
+  TWILIO_AUTH_TOKEN: ${{secrets.TWILIO_AUTH_TOKEN}}
+  CLOUDINARY_CLOUD_NAME: ${{secrets.CLOUDINARY_CLOUD_NAME}}
+  CLOUDINARY_KEY: ${{secrets.CLOUDINARY_KEY}}
+  CLOUDINARY_API_SECRET: ${{secrets.CLOUDINARY_API_SECRET}}
+  SENDGRID_API_KEY: ${{secrets.SENDGRID_API_KEY}}
